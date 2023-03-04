@@ -3,12 +3,11 @@ package casosComIF_ELSE;
 import java.util.Scanner;
 
 public class Ordena3Nros {
-
-	public static void main(String[] args) {
-		int nro1, nro2, nro3;
-		int menor, maior, meio;
+     public static void main(String[] args) {
+       	int nro1, nro2, nro3;
+	int menor, maior, meio;
 		
-		Scanner scanner = new Scanner(System.in);
+	Scanner scanner = new Scanner(System.in);
 
         // lê os três valores inteiros
         System.out.println("Digite três valores inteiros (sem repetição):");
@@ -27,8 +26,7 @@ public class Ordena3Nros {
         meio = nro1 + nro2 + nro3 - menor - maior;
 
         // exibe os números em ordem crescente
-        System.out.printf("Os números em ordem crescente são: %d, %d, %d%n", menor, meio, maior);
-        
+        System.out.printf("Os números em ordem crescente são: %d, %d, %d%n", menor, meio, maior);   
         scanner.close();
-    }
+     } 
 }
