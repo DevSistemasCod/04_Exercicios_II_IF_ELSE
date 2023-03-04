@@ -3,7 +3,7 @@ package casosComIF_ELSE;
 import java.util.Scanner;
 
 public class OperacoesBasicas {
-	public static void main(String[] args) {
+     public static void main(String[] args) {
         Scanner lerDados = new Scanner(System.in);
         double num1, num2;
         double soma, subtracao, multiplicacao, divisao=0; 
@@ -32,6 +32,7 @@ public class OperacoesBasicas {
         } else {
             System.out.println("Divisão por zero não é permitida!");
         }
+	lerDados.close();	
     }
 
 }
