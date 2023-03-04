@@ -7,13 +7,13 @@ public class Ordena3Nros {
        	int nro1, nro2, nro3;
 	int menor, maior, meio;
 		
-	Scanner scanner = new Scanner(System.in);
+	Scanner lerDados = new Scanner(System.in);
 
         // lê os três valores inteiros
         System.out.println("Digite três valores inteiros (sem repetição):");
-        nro1 = scanner.nextInt();
-        nro2 = scanner.nextInt();
-        nro3 = scanner.nextInt();
+        nro1 = lerDados.nextInt();
+        nro2 = lerDados.nextInt();
+        nro3 = lerDados.nextInt();
 
         // verifica se não há valores iguais
         if (nro1 == nro2 || nro1 == nro3 || nro2 == nro3) {
@@ -27,6 +27,6 @@ public class Ordena3Nros {
 
         // exibe os números em ordem crescente
         System.out.printf("Os números em ordem crescente são: %d, %d, %d%n", menor, meio, maior);   
-        scanner.close();
+        lerDados.close();
      } 
 }
